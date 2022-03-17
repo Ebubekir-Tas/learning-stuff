@@ -1,0 +1,14 @@
+.counter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.input-container {
+  margin-top: 32px;
+}
+
+.counter-btn {
+  margin-right: 16px;
+  border-radius: 8px;
+}
