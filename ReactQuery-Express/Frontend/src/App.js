@@ -1,14 +1,10 @@
-import { useQuery } from 'react-query';
+import { CachedMessage } from './React-Query/CachedMessage';
+import useMsg from './Hooks/useMsg';
 import logo from './logo.svg';
 import './App.css';
 
-const getUsers = async () => {
-  const res = await fetch('http://localhost:3001/userMsg')
-  return res.json();
-}
-
 function App() {
-  const { data, isLoading, error } = useQuery('msg', getUsers)
+  const { isLoading, data, error } = useMsg();
 
   return (
     <div className="App">
@@ -19,6 +15,7 @@ function App() {
           {data?.message}
           {error && 'error fetching'}
         </h1>
+        <CachedMessage />
       </header>
     </div>
   );
