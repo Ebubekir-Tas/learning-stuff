@@ -12,7 +12,7 @@ const queryClient = new QueryClient({
       refetchOnWindowFocus: false,
     },
   },
-})
+});
 
 ReactDOM.render(
   <React.StrictMode>
