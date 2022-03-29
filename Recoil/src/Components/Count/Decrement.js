@@ -16,7 +16,7 @@ export const Decrement = () => {
       >
         Decrement: 
       </button>
-      <h1>Count: {count}</h1>
+      <h1 style={{ color: 'orange' }}>Count: {count}</h1>
     </div>
   )
 }
